@@ -1,7 +1,8 @@
-
 import express from 'express';
+
 import path from 'path';
 import { Routes } from './routes';
+
 class App
 {
   public app: express.Application;
@@ -11,9 +12,7 @@ class App
 
     // Create a new express application instance and add middleware
     this.app = express();
-    
     this.routePrv.routes(this.app);
-
   }
 
 }
